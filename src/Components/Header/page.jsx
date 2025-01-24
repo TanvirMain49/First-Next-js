@@ -20,7 +20,7 @@ export default async function Header() {
 
                 {/* Right side: Button */}
                 {
-                    user?.email ? <LogoutLink className="bg-red-500 btn text-white">Log out</LogoutLink> : <>
+                    user?.email ? <LogoutLink prefetch={false} className="bg-red-500 btn text-white">Log out</LogoutLink> : <>
 
                         <div className="flex items-center gap-2">
                             <LoginLink className="bg-blue-500 btn text-white">log in</LoginLink>
