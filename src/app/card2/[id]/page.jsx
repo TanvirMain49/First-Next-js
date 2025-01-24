@@ -1,6 +1,3 @@
-import getPost from "@/lib/getPost";
-
-
 
 export default async function PostDetails({ params }) {
     const id = (await params).id;
