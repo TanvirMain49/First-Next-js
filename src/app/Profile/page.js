@@ -6,6 +6,10 @@ export default async function Profile() {
   const { getUser, isAuthenticated } = await getKindeServerSession();
 
 
+  if (!await isAuthenticated()) {
+    // If not authenticated, return null or show some loading state if needed
+    return null;
+  }
 
   const user = await getUser();
 

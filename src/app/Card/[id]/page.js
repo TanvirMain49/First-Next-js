@@ -3,7 +3,6 @@ import getPost from "@/lib/getPost";
 export default async function PostDetails({params}){
     const {id} = params;
     const post = await getPost(id);
-    console.log(post);
     return(
         <div className="mt-6 text-center max-w-3xl mx-auto">
             <h2 className="mb-8 text-5xl">Blogs Details({id})</h2>
