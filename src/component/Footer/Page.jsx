@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-<footer className="footer bg-neutral text-neutral-content p-10 pl-56 mt-20">
+<footer className="flex justify-between w-full bg-neutral text-neutral-content p-10 px-72 mt-20">
   <aside>
     <div>
        <p className="text-5xl font-bold mb-2">BLog Heaven</p>
