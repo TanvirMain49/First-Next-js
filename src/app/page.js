@@ -1,4 +1,3 @@
-import Home from "@/Components/home";
 import Card2 from "./card2/page";
 // import getAllPosts from "@/lib/getAllPosts";
 
