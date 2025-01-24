@@ -1,6 +1,5 @@
 'use client';
-
-import Card from "../app/Card/page";
+import Card from "@/components/Card"; 
 
 // eslint-disable-next-line @next/next/no-async-client-component
 export default function Home ({posts}) {

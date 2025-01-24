@@ -1,13 +1,16 @@
-
 import Home from "@/Components/home";
 import getAllPosts from "@/lib/getAllPosts";
 
-// This function runs server-side only
 export default async function Page() {
   const posts = await getAllPosts();
+
+  if (!posts) {
+    return <div>No posts available</div>;
+  }
+
   return (
     <div>
-      <Home posts={posts}/>
+      <Home posts={posts} />
     </div>
   );
 }
