@@ -1,7 +1,7 @@
 import getPost from "@/lib/getPost";
 
 export default async function PostDetails({params}){
-    const {id} = params;
+    const {id} = await params;
     const post = await getPost(id);
     return(
         <div className="mt-6 text-center max-w-3xl mx-auto">
